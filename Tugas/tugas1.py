@@ -1,3 +1,10 @@
-# Menampilkan bintang dengan jumlah ganjil: 1, 3, 5
-for i in range(1, 6, 2):  # Mulai dari 1 sampai 5, loncat 2 (jadi hanya angka ganjil)
-    print('*' * i)
+# jumlah baris piramida
+n = 3
+i = 0
+
+while i < n :
+    spasi = " " * (n - i - 1) # menambahkan spasi di kiri
+    bintang = "*" * (2 * i + 1) # Menambahkan jumlah bintang sesuai baris
+    print(spasi + bintang)  # Gabungkan spasi dan bintang lalu cetak
+    i += 1
+
